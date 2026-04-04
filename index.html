@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>carol.exe</title>
+  <meta name="description" content="Portfólio de Carol Paz Landim - Engenharia de Computação com foco em desenvolvimento web, automação e soluções criativas.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="carol.exe | Portfólio de Carol Paz Landim">
+  <meta property="og:description" content="Projetos em desenvolvimento web, automação e tecnologia com foco em impacto real.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- TERMINAL -->
+  <div class="terminal fade-in" id="terminal">
+    <img src="src/imagens/minha foto.jpeg" alt="Foto de Carol" class="mobile-name-photo" loading="lazy" decoding="async">
+    <span id="name"></span>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header slide-left">
+    <div class="title">[ ENG/DEV ]</div>
+    <div>
+      <a href="https://github.com/CarolPazLandim" style="color: #3d6fb8; text-decoration: none;">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/carol-paz-landim-72190a365/" style="color: #3d6fb8; text-decoration: none;">LinkedIn</a> | 
+      <a href="mailto:carol@gmail.com" style="color: #3d6fb8; text-decoration: none;">Gmail</a> | 
+      <span id="language-toggle" style="cursor: pointer; font-size: 1em; margin-left: 15px; display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; background: rgba(61, 111, 184, 0.1); border: 2px solid rgba(61, 111, 184, 0.3); border-radius: 8px; transition: all 0.3s ease;">
+        <span class="lang-current">PT</span>
+        <span style="opacity: 0.5;">|</span>
+        <span class="lang-other" style="opacity: 0.6;">EN</span>
+      </span>
+      <span id="theme-toggle" style="cursor: pointer; font-size: 1.2em; margin-left: 15px;">Claro</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero fade-in">
+    <div class="hero-layout">
+      <div class="hero-content">
+        <h1 data-translate="hero-title">Sempre criando, jogando, programando, trabalhando e estudando!!</h1>
+        <p data-translate="hero-subtitle">Engenharia não é apenas sobre cálculos; é sobre transformar desafios em soluções viáveis</p>
+
+        <div class="hero-tags reveal">
+          <span class="hero-tag">Python</span>
+          <span class="hero-tag">JavaScript</span>
+          <span class="hero-tag">C/C++</span>
+          <span class="hero-tag">APIs</span>
+          <span class="hero-tag">Automação</span>
+          <span class="hero-tag">Jogos</span>
+        </div>
+
+        <div class="buttons">
+          <a href="#projetos" style="text-decoration: none;"><button class="bounce" data-translate="btn-projects">./projetos</button></a>
+          <a href="#sobre" style="text-decoration: none;"><button class="bounce" data-translate="btn-about">./sobre</button></a>
+          <a href="src/Currículo/Curriculo Carolina Ferreira Paz Landim.pdf" download style="text-decoration: none;"><button class="bounce" data-translate="btn-resume">./curriculo</button></a>
+        </div>
+      </div>
+
+      <div class="hero-photo-card reveal">
+        <img src="src/imagens/minha foto.jpeg" alt="Foto de Carol" class="profile-photo hero-photo">
+      </div>
+    </div>
+  </div>
+
+  <!-- SOBRE -->
+  <div id="sobre" class="about fade-in">
+    <h2 data-translate="about-title">[ SOBRE ]</h2>
+    <p data-translate="about-text">Sou Carol Paz Landim, atuo como Designer na PazLandim e sou estudante do 3º período de Engenharia da Computação na UNIFEV.
+
+Minha atuação combina visão criativa e raciocínio técnico: transformo ideias em experiências visuais funcionais e também em soluções de desenvolvimento com foco em resultado real.
+
+Tenho experiência com Python, JavaScript, C/C++, HTML/CSS, automação e APIs, sempre buscando unir estética, usabilidade e performance em cada projeto.
+
+Sou movida por aprendizado constante, inovação e execução com qualidade. Atualmente, busco oportunidades de estágio e projetos em que eu possa evoluir rápido, contribuir com impacto e construir soluções que façam diferença.</p>
+  </div>
+
+  <!-- DIFERENCIAIS -->
+  <div class="highlights reveal">
+    <h2 data-translate="highlights-title">[ DIFERENCIAIS ]</h2>
+    <div class="highlights-grid">
+      <article class="highlight-item">
+        <h3 data-translate="highlight1-title">Mentalidade de produto</h3>
+        <p data-translate="highlight1-desc">Não foco só no código: penso em usabilidade, impacto real e evolução contínua.</p>
+      </article>
+      <article class="highlight-item">
+        <h3 data-translate="highlight2-title">Execução com consistência</h3>
+        <p data-translate="highlight2-desc">Transformo ideias em entregas práticas, com organização e atenção aos detalhes.</p>
+      </article>
+      <article class="highlight-item">
+        <h3 data-translate="highlight3-title">Aprendizado acelerado</h3>
+        <p data-translate="highlight3-desc">Aprendo rápido, testo hipóteses e evoluo solução com base em feedback.</p>
+      </article>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="dashboard slide-right">
+    <div class="card">
+      <p data-translate="card-projects">Projetos</p>
+      <h2>6</h2>
+    </div>
+
+    <div class="card">
+      <p data-translate="card-experience">Experiência</p>
+      <h2>3 anos</h2>
+    </div>
+  </div>
+
+  <!-- PROJETO DESTAQUE -->
+  <div class="featured-case reveal">
+    <h2 data-translate="featured-title">[ PROJETO DESTAQUE ]</h2>
+    <p class="featured-subtitle" data-translate="featured-subtitle">Um exemplo de como transformo problema real em solução prática com foco em experiência e resultado.</p>
+    <div class="case-grid">
+      <article class="case-block">
+        <h3 data-translate="featured-problem-title">Problema</h3>
+        <p data-translate="featured-problem-text">Dificuldade para organizar atendimentos no Discord com demora para responder e pouca visibilidade dos pedidos.</p>
+      </article>
+      <article class="case-block">
+        <h3 data-translate="featured-solution-title">Solução</h3>
+        <p data-translate="featured-solution-text">Criei um bot com sistema de tickets, comandos simples e fluxo de atendimento mais claro para equipe e usuário.</p>
+      </article>
+      <article class="case-block">
+        <h3 data-translate="featured-impact-title">Impacto</h3>
+        <p data-translate="featured-impact-text">Atendimento mais rápido, melhor organização e experiência mais confiável para quem precisa de suporte.</p>
+      </article>
+    </div>
+  </div>
+
+  <!-- PROJETOS -->
+  <div class="projects fade-in" id="projetos">
+    <h2 data-translate="projects-title">[ PROJETOS ]</h2>
+    <p class="section-intro" data-translate="projects-intro">Explore por categoria para ver o tipo de solução que eu construo.</p>
+
+    <div class="project-filters" id="project-filters">
+      <button class="filter-btn active" data-filter="all" data-translate="filter-all">Todos</button>
+      <button class="filter-btn" data-filter="bot" data-translate="filter-bot">Bots</button>
+      <button class="filter-btn" data-filter="web" data-translate="filter-web">Web</button>
+      <button class="filter-btn" data-filter="game" data-translate="filter-game">Jogos</button>
+    </div>
+
+    <div class="grid">
+      <div class="project-card" data-category="bot">
+        <h3><a href="https://github.com/CarolPazLandim/Bots-para-Discord/tree/main/bot%20suporte" target="_blank" data-translate="project1-title">Bot de Suporte para o Discord</a></h3>
+        <p data-translate="project1-desc">Sistema de atendimento automatizado com ticketing.</p>
+        <div class="project-tags">
+          <span class="project-tag">Discord</span>
+          <span class="project-tag">Automação</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <h3><a href="https://projetoanimes.netlify.app" target="_blank" data-translate="project2-title">Site de animes</a></h3>
+        <p data-translate="project2-desc">Site para mostrar informações sobre animes.</p>
+        <div class="project-tags">
+          <span class="project-tag">UI</span>
+          <span class="project-tag">Front-end</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="game">
+        <h3><a data-translate="project3-title">Criação e recriação de jogos</a></h3>
+        <p data-translate="project3-desc">Desenvolvimento de jogos utilizando engines como Construct.</p>
+        <div class="project-tags">
+          <span class="project-tag">Desenvolvimento de Jogos</span>
+          <span class="project-tag">Construct</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="skills slide-left">
+    <h2 data-translate="skills-title">[ STACK ]</h2>
+    <div style="position: relative; width: 100%; max-width: 800px; margin: 40px 0;">
+      <canvas id="skillsChart"></canvas>
+    </div>
+    <div id="skillDetail" style="margin-top: 30px; padding: 20px; border: 1px solid #2b5da5; border-radius: 8px; background: rgba(41, 92, 173, 0.05); display: none;">
+      <h3 id="skillName" style="margin-top: 0;"></h3>
+      <p id="skillDescription"></p>
+      <p id="skillProjects" style="font-size: 0.9em; color: #214a86;"></p>
+    </div>
+  </div>
+
+  <!-- CONTATO RAPIDO -->
+  <div class="quick-contact reveal">
+    <h2 data-translate="quick-title">Vamos conversar?</h2>
+    <p data-translate="quick-desc">Se você busca alguém com energia para aprender rápido e executar com qualidade, eu topo conversar sobre estágio, projeto ou parceria.</p>
+    <div class="quick-contact-links">
+      <a href="https://github.com/CarolPazLandim" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/carol-paz-landim-72190a365/" target="_blank">LinkedIn</a>
+      <a href="mailto:carol@gmail.com">Gmail</a>
+    </div>
+  </div>
+
+
+
+  <!-- CONTATO -->
+  <div class="contact slide-right">
+    <div class="terminal-window">
+      <div class="terminal-header" data-translate="terminal-header">Terminal - Iniciar Projeto</div>
+      <div class="terminal-body" id="terminal-body">
+        > <span data-translate="terminal-welcome">Bem-vindo ao terminal de projetos!</span><br>
+        > <span data-translate="terminal-help">Digite 'help' para ver opções ou 'iniciar' para começar.</span><br>
+        >
+      </div>
+      <input type="text" id="terminal-cmd" placeholder="Comando..." onkeypress="handleCommand(event)">
+    </div>
+    <button id="send-btn" style="display: none; margin-top: 10px;">Enviar mensagem</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="fade-in">
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 15px;">
+      <p>system.out.println("© 2026 - Carol Paz Landim")</p>
+    </div>
+  </footer>
+
+</div>
+
+
+  <script defer src="script.js"></script>
+</body>
+</html>
+
+
